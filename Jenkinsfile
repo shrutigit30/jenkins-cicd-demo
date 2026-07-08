@@ -13,7 +13,7 @@ pipeline {
         stage('Verify Files') {
             steps {
                 echo 'Listing project files...'
-                bat 'dir'
+                sh 'ls -la'
             }
         }
 
